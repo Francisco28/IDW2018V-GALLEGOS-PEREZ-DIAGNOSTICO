@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Examen Diagnostico </title>
+    <style>
+        h2 {
+          position: relative;  
+          left:100px;
+        }
+        </style>
+</head>
+
+<body>
+    
+<script type="text/javascript">
+function inicia(){
+
+       if (document.form.password.value=='admin' && document.form.usuario.value=='admin'){ 
+        
+        document.form.submit(); 
+        
+        		} 
+    	
+    			else{ 
+         				alert("LOS DATOS SON INCORRECTOS!"); 
+    			} 
+} 
+</script> 
+<h2>Login</h2>
+<form name=form action="bienvenido.html">
+
+<P>Usuario: <input type=text name=usuario placeholder="usuario"> 
+	<br />
+	<br />
+<P>Password: <input type=password name=password placeholder="password"> 
+    <br/>
+    <br/>
+
+<input onclick=inicia() type=button value=Ingresar>
+
+</form> 
+</body>
+</html>
